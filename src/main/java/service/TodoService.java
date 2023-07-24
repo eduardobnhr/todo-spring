@@ -20,7 +20,6 @@ public class TodoService {
 		return list();
 
 	}
-
 	public List<Todo> list() {
 		org.springframework.data.domain.Sort sort = org.springframework.data.domain.Sort.by("prioridade")
 		.descending().and(org.springframework.data.domain.Sort.by("nome").ascending());
